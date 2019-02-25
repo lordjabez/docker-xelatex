@@ -1,7 +1,7 @@
 #: title  : moss/xelatex
 #: author : "Willian Paixao" <willian@ufpa.br>
 #: version: "1.1.0"
-FROM debian:8
+FROM debian:9-slim
 MAINTAINER thiagoalmeidasa@gmail.com
 
 LABEL version="1.1.0"
@@ -27,4 +27,3 @@ RUN apt-get update && \
 # Export the output data
 WORKDIR /data
 VOLUME ["/data"]
-
